@@ -1,0 +1,68 @@
+//CUSTOM MIXINS
+
+//@include placeholder-style($base-font, $footer-bg-color, 0.8em);
+/*@include placeholder{
+	font-family: $roboto-font !important;
+	color: $footer-bg-color !important;
+	font-size: 0.90em !important;
+}*/
+
+@mixin placeholder{
+	::-webkit-input-placeholder{ @content; } 
+	:-moz-placeholder{ @content; } 
+	::-moz-placeholder{ @content; } 
+	:-ms-input-placeholder{ @content; } 
+}
+
+@mixin selection {
+    ::-moz-selection { @content; }
+    ::selection { @content; }
+}
+
+@mixin arrow($width, $color){
+	border-left: $width solid $color;
+	border-bottom: $width solid transparent;
+	border-top: $width solid transparent;
+}
+
+//PSEUDO ELEMENTS, STANDARDIZATION
+/*@mixin  placeholder-style($font, $color, $size){
+	::-webkit-input-placeholder{
+		font-family: $font;
+		color: $color;
+		size: $size;
+	} 
+	:-moz-placeholder{
+		font-family: $font;
+		color: $color;
+		size: $size;
+	} 
+	::-moz-placeholder{
+		font-family: $font;
+		color: $color;
+		size: $size;
+	} 
+	:-ms-input-placeholder{
+		font-family: $font;
+		color: $color;
+		size: $size;
+	} 
+}*/
+
+@mixin placeholder{
+	::-webkit-input-placeholder{ @content; } 
+	:-moz-placeholder{ @content; } 
+	::-moz-placeholder{ @content; } 
+	:-ms-input-placeholder{ @content; } 
+}
+
+@mixin selection {
+    ::-moz-selection { @content; }
+    ::selection { @content; }
+}
+
+@mixin arrow($width, $color){
+	border-left: $width solid $color;
+	border-bottom: $width solid transparent;
+	border-top: $width solid transparent;
+}
