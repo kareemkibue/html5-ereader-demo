@@ -69,10 +69,10 @@ var bookId=GetUrlValue('bookId');
 var epubUrl="";
 
 if (bookId==1){
-	epubUrl = "epub/The_Autobiography_of_Malcolm_X.epub";
+	epubUrl = "epub/Alexandre_Dumas_The_Count_of_Monte_Cristo.epub";
 }
 else if (bookId==2){
-	epubUrl = "epub/Meyer_Stephenie-Twilight.epub";
+	epubUrl = "epub/Charles_Dickens_Oliver_Twist.epub";
 }
 
 var request = new XMLHttpRequest();
