@@ -7,6 +7,8 @@ sass/bootstrap-sass/*
 js/data/*
 js/lib/*
 CONTENT/*
+.sass-cache/*
+config.rb
 
 #Hidden system files
 *.DS_Store
